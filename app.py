@@ -25,10 +25,17 @@ from utils.date_parser import validar_data_futura, validar_horario_futuro
 app = Flask(__name__)
 
 def send_telegram_message(chat_id, text):
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {"chat_id": chat_id, "text": text}
-    response = requests.post(url, json=payload)
-    return response.json()
+    try:
+        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+        payload = {"chat_id": chat_id, "text": text}
+        print(f"📤 Enviando para Telegram chat_id={chat_id}: {text[:50]}...")
+        response = requests.post(url, json=payload)
+        print(f"📥 Resposta Telegram: {response.status_code} - {response.json()}")
+        return response.json()
+    except Exception as e:
+        print(f"❌ Erro ao enviar para Telegram: {e}")
+        traceback.print_exc()
+        return {"ok": False, "error": str(e)}
 
 # print(app.url_map)
 
@@ -397,8 +404,15 @@ def telegram_webhook():
         if "message" in data:
             chat_id = data["message"]["chat"]["id"]
             text = data["message"].get("text", "")
+            print(f"💬 Mensagem do chat {chat_id}: {text}")
 
-            resposta_texto = processar_chat_web(str(chat_id), text)
+            try:
+                resposta_texto = processar_chat_web(str(chat_id), text)
+                print(f"✅ Resposta gerada: {resposta_texto[:50]}...")
+            except Exception as e:
+                print(f"❌ Erro ao processar mensagem: {e}")
+                traceback.print_exc()
+                resposta_texto = "Desculpe, tive um erro ao processar sua mensagem."
 
             send_telegram_message(chat_id, resposta_texto)
 
@@ -406,7 +420,8 @@ def telegram_webhook():
     
     except Exception as e:
         print("💥 ERRO TELEGRAM:", e)
-        return jsonify({"status": "erro"}), 500
+        traceback.print_exc()
+        return jsonify({"status": "erro", "error": str(e)}), 500
 
 
 if __name__ == "__main__":
