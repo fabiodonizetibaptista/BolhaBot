@@ -1,11 +1,13 @@
 from datetime import datetime
 import traceback
+import requests
 
 from flask import Flask, jsonify, render_template, request
 from config import (
     DIALOGFLOW_AGENT_ID,
     DIALOGFLOW_CHAT_TITLE,
     DIALOGFLOW_LANGUAGE_CODE,
+    TELEGRAM_BOT_TOKEN,
 )
 from services.agendamento_service import (
     consultar_agendamento,
@@ -21,6 +23,12 @@ from utils.formatters import (
 from utils.date_parser import validar_data_futura, validar_horario_futuro
 
 app = Flask(__name__)
+
+def send_telegram_message(chat_id, text):
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    payload = {"chat_id": chat_id, "text": text}
+    response = requests.post(url, json=payload)
+    return response.json()
 
 print(app.url_map)
 
@@ -378,6 +386,17 @@ def webhook():
 
 def resposta(msg):
     return jsonify({"fulfillmentText": msg})
+
+
+@app.route("/telegram", methods=["POST"])
+def telegram_webhook():
+    data = request.get_json()
+    if "message" in data:
+        chat_id = data["message"]["chat"]["id"]
+        text = data["message"].get("text", "")
+        resposta = processar_chat_web(str(chat_id), text)
+        send_telegram_message(chat_id, resposta)
+    return jsonify({"status": "ok"})
 
 
 if __name__ == "__main__":
