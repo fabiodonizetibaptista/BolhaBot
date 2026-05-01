@@ -30,7 +30,7 @@ def send_telegram_message(chat_id, text):
     response = requests.post(url, json=payload)
     return response.json()
 
-print(app.url_map)
+# print(app.url_map)
 
 sessoes = {}
 HORARIOS_VALIDOS = [
@@ -390,13 +390,23 @@ def resposta(msg):
 
 @app.route("/telegram", methods=["POST"])
 def telegram_webhook():
-    data = request.get_json()
-    if "message" in data:
-        chat_id = data["message"]["chat"]["id"]
-        text = data["message"].get("text", "")
-        resposta = processar_chat_web(str(chat_id), text)
-        send_telegram_message(chat_id, resposta)
-    return jsonify({"status": "ok"})
+    try:
+        data = request.get_json()
+        print("🔥 TELEGRAM CHEGOU:", data)
+
+        if "message" in data:
+            chat_id = data["message"]["chat"]["id"]
+            text = data["message"].get("text", "")
+
+            resposta_texto = processar_chat_web(str(chat_id), text)
+
+            send_telegram_message(chat_id, resposta_texto)
+
+        return jsonify({"status": "ok"})
+    
+    except Exception as e:
+        print("💥 ERRO TELEGRAM:", e)
+        return jsonify({"status": "erro"}), 500
 
 
 if __name__ == "__main__":
