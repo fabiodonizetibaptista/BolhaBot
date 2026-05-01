@@ -182,7 +182,7 @@ def processar_fluxo_agendamento(session_id, texto):
         if not placa:
             return "Informe a placa do veiculo. Exemplo: ABC1234."
         dados["placa"] = placa
-        return "Para qual data deseja agendar? (pode usar 'amanha', 'segunda', '15/05/2026', etc)"
+        return "Para qual data deseja agendar?"
 
     # Passo 3: Coletar data
     if not dados["data"]:
