@@ -1,8 +1,24 @@
 from datetime import datetime
 import traceback
 import requests
+import logging
 
 from flask import Flask, jsonify, render_template, request
+
+# Configurar logging para arquivo
+logging.basicConfig(
+    filename='telegram_debug.log',
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+# Também logar no console
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG)
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+console_handler.setFormatter(formatter)
+logger.addHandler(console_handler)
 from config import (
     DIALOGFLOW_AGENT_ID,
     DIALOGFLOW_CHAT_TITLE,
@@ -28,13 +44,13 @@ def send_telegram_message(chat_id, text):
     try:
         url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
         payload = {"chat_id": chat_id, "text": text}
-        print(f"📤 Enviando para Telegram chat_id={chat_id}: {text[:50]}...")
+        logger.info(f"📤 Enviando para Telegram chat_id={chat_id}: {text[:50]}...")
         response = requests.post(url, json=payload)
-        print(f"📥 Resposta Telegram: {response.status_code} - {response.json()}")
+        logger.info(f"📥 Resposta Telegram: {response.status_code} - {response.json()}")
         return response.json()
     except Exception as e:
-        print(f"❌ Erro ao enviar para Telegram: {e}")
-        traceback.print_exc()
+        logger.error(f"❌ Erro ao enviar para Telegram: {e}")
+        logger.error(traceback.format_exc())
         return {"ok": False, "error": str(e)}
 
 # print(app.url_map)
@@ -399,28 +415,45 @@ def resposta(msg):
 def telegram_webhook():
     try:
         data = request.get_json()
-        print("🔥 TELEGRAM CHEGOU:", data)
+        logger.info(f"🔥 TELEGRAM CHEGOU: {data}")
 
-        if "message" in data:
-            chat_id = data["message"]["chat"]["id"]
-            text = data["message"].get("text", "")
-            print(f"💬 Mensagem do chat {chat_id}: {text}")
+        if data and "message" in data:
+            logger.info("✅ Campo 'message' encontrado")
+            
+            try:
+                chat_id = data["message"]["chat"]["id"]
+                logger.info(f"✅ Chat ID extraído: {chat_id}")
+            except Exception as e:
+                logger.error(f"❌ Erro ao extrair chat_id: {e}")
+                return jsonify({"status": "erro", "error": "chat_id"}), 500
+            
+            try:
+                text = data["message"].get("text", "")
+                logger.info(f"✅ Texto extraído: '{text}'")
+            except Exception as e:
+                logger.error(f"❌ Erro ao extrair text: {e}")
+                return jsonify({"status": "erro", "error": "text"}), 500
+            
+            logger.info(f"💬 Processando mensagem do chat {chat_id}: {text}")
 
             try:
                 resposta_texto = processar_chat_web(str(chat_id), text)
-                print(f"✅ Resposta gerada: {resposta_texto[:50]}...")
+                logger.info(f"✅ Resposta gerada: {resposta_texto[:50]}...")
             except Exception as e:
-                print(f"❌ Erro ao processar mensagem: {e}")
-                traceback.print_exc()
+                logger.error(f"❌ Erro ao processar mensagem: {e}")
+                logger.error(traceback.format_exc())
                 resposta_texto = "Desculpe, tive um erro ao processar sua mensagem."
 
+            logger.info(f"📤 Enviando resposta para Telegram...")
             send_telegram_message(chat_id, resposta_texto)
+        else:
+            logger.warning("⚠️ 'message' não encontrado em data")
 
         return jsonify({"status": "ok"})
     
     except Exception as e:
-        print("💥 ERRO TELEGRAM:", e)
-        traceback.print_exc()
+        logger.error(f"💥 ERRO TELEGRAM: {e}")
+        logger.error(traceback.format_exc())
         return jsonify({"status": "erro", "error": str(e)}), 500
 
 

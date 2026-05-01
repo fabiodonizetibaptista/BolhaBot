@@ -1,0 +1,3 @@
+2026-05-01 00:53:53,090 - werkzeug - WARNING -  * Debugger is active!
+2026-05-01 00:53:53,103 - werkzeug - INFO -  * Debugger PIN: 109-752-643
+2026-05-01 00:53:55,843 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Fabio\\Documents\\BolhaBot\\app.py', reloading
