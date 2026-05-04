@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 import traceback
 import requests
@@ -5,26 +6,21 @@ import logging
 
 from flask import Flask, jsonify, render_template, request
 
-# Configurar logging para arquivo
+# Configurar logging
 logging.basicConfig(
-    filename='telegram_debug.log',
-    level=logging.DEBUG,
+    level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
-
-# Também logar no console
-console_handler = logging.StreamHandler()
-console_handler.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-console_handler.setFormatter(formatter)
-logger.addHandler(console_handler)
 from config import (
     DIALOGFLOW_AGENT_ID,
     DIALOGFLOW_CHAT_TITLE,
     DIALOGFLOW_LANGUAGE_CODE,
     TELEGRAM_BOT_TOKEN,
 )
+
+if not TELEGRAM_BOT_TOKEN:
+    raise RuntimeError("Defina TELEGRAM_BOT_TOKEN no ambiente ou no arquivo .env.")
 from services.agendamento_service import (
     consultar_agendamento,
     consultar_agendamento_por_data,
@@ -457,5 +453,12 @@ def telegram_webhook():
         return jsonify({"status": "erro", "error": str(e)}), 500
 
 
+@app.route("/health", methods=["GET"])
+def health():
+    return jsonify({"status": "ok", "service": "BolhaBot"})
+
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.getenv("PORT", 5000))
+    logger.info(f"🚀 Iniciando BolhaBot na porta {port}")
+    app.run(host="0.0.0.0", port=port)

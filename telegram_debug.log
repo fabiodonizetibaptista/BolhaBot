@@ -1,3 +1,340 @@
-2026-05-01 00:53:53,090 - werkzeug - WARNING -  * Debugger is active!
-2026-05-01 00:53:53,103 - werkzeug - INFO -  * Debugger PIN: 109-752-643
-2026-05-01 00:53:55,843 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Fabio\\Documents\\BolhaBot\\app.py', reloading
+2026-05-01 00:56:08,603 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-01 00:56:08,604 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-05-01 00:56:08,615 - werkzeug - INFO -  * Restarting with stat
+2026-05-01 00:56:18,012 - werkzeug - WARNING -  * Debugger is active!
+2026-05-01 00:56:18,020 - werkzeug - INFO -  * Debugger PIN: 109-752-643
+2026-05-01 01:00:31,239 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2026-05-01 01:00:31,240 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-05-01 01:00:31,244 - werkzeug - INFO -  * Restarting with stat
+2026-05-01 01:00:36,645 - werkzeug - WARNING -  * Debugger is active!
+2026-05-01 01:00:36,652 - werkzeug - INFO -  * Debugger PIN: 109-752-643
+2026-05-01 14:01:29,538 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2026-05-01 14:01:29,539 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-05-01 14:01:29,546 - werkzeug - INFO -  * Restarting with stat
+2026-05-01 14:01:36,449 - werkzeug - WARNING -  * Debugger is active!
+2026-05-01 14:01:36,458 - werkzeug - INFO -  * Debugger PIN: 109-752-643
+2026-05-04 19:03:01,321 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2026-05-04 19:03:01,323 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-05-04 19:03:01,329 - werkzeug - INFO -  * Restarting with stat
+2026-05-04 19:03:07,936 - werkzeug - WARNING -  * Debugger is active!
+2026-05-04 19:03:07,943 - werkzeug - INFO -  * Debugger PIN: 109-752-643
+2026-05-04 19:08:06,640 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'message': {'chat': {'id': 999}, 'text': 'teste'}}
+2026-05-04 19:08:06,641 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:08:06,642 - __main__ - INFO - \u2705 Chat ID extraído: 999
+2026-05-04 19:08:06,642 - __main__ - INFO - \u2705 Texto extraído: 'teste'
+2026-05-04 19:08:06,643 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 999: teste
+2026-05-04 19:08:06,648 - __main__ - INFO - \u2705 Resposta gerada: Oi! Eu posso agendar lavagem ou consultar um agend...
+2026-05-04 19:08:06,650 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:08:06,651 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=999: Oi! Eu posso agendar lavagem ou consultar um agend...
+2026-05-04 19:08:06,658 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:08:08,449 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 400 73
+2026-05-04 19:08:08,450 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 400 - {'ok': False, 'error_code': 400, 'description': 'Bad Request: chat not found'}
+2026-05-04 19:08:08,455 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:08:08] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:08:46,443 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Fabio\\Documents\\BolhaBot\\app.py', reloading
+2026-05-04 19:08:47,593 - werkzeug - INFO -  * Restarting with stat
+2026-05-04 19:08:58,719 - __main__ - INFO - \U0001f680 Iniciando app Flask na porta 5000
+2026-05-04 19:08:58,820 - werkzeug - WARNING -  * Debugger is active!
+2026-05-04 19:08:58,827 - werkzeug - INFO -  * Debugger PIN: 109-752-643
+2026-05-04 19:09:11,388 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Fabio\\Documents\\BolhaBot\\test_telegram.py', reloading
+2026-05-04 19:09:12,098 - werkzeug - INFO -  * Restarting with stat
+2026-05-04 19:09:20,067 - __main__ - INFO - \U0001f680 Iniciando app Flask na porta 5000
+2026-05-04 19:09:20,183 - werkzeug - WARNING -  * Debugger is active!
+2026-05-04 19:09:20,195 - werkzeug - INFO -  * Debugger PIN: 109-752-643
+2026-05-04 19:09:21,345 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:09:21] "GET /health HTTP/1.1" 200 -
+2026-05-04 19:09:22,657 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Fabio\\Documents\\BolhaBot\\test_telegram.py', reloading
+2026-05-04 19:09:23,163 - werkzeug - INFO -  * Restarting with stat
+2026-05-04 19:09:28,859 - __main__ - INFO - \U0001f680 Iniciando app Flask na porta 5000
+2026-05-04 19:09:29,086 - werkzeug - WARNING -  * Debugger is active!
+2026-05-04 19:09:29,095 - werkzeug - INFO -  * Debugger PIN: 109-752-643
+2026-05-04 19:09:29,205 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'message': {'chat': {'id': 999}, 'text': 'teste'}}
+2026-05-04 19:09:29,206 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:09:29,206 - __main__ - INFO - \u2705 Chat ID extraído: 999
+2026-05-04 19:09:29,206 - __main__ - INFO - \u2705 Texto extraído: 'teste'
+2026-05-04 19:09:29,207 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 999: teste
+2026-05-04 19:09:29,208 - __main__ - INFO - \u2705 Resposta gerada: Oi! Eu posso agendar lavagem ou consultar um agend...
+2026-05-04 19:09:29,208 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:09:29,208 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=999: Oi! Eu posso agendar lavagem ou consultar um agend...
+2026-05-04 19:09:29,211 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:09:30,888 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 400 73
+2026-05-04 19:09:30,889 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 400 - {'ok': False, 'error_code': 400, 'description': 'Bad Request: chat not found'}
+2026-05-04 19:09:30,895 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:09:30] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:09:35,213 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:09:35] "GET /health HTTP/1.1" 200 -
+2026-05-04 19:09:37,278 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'message': {'chat': {'id': 999}, 'text': 'teste'}}
+2026-05-04 19:09:37,288 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:09:37,324 - __main__ - INFO - \u2705 Chat ID extraído: 999
+2026-05-04 19:09:37,365 - __main__ - INFO - \u2705 Texto extraído: 'teste'
+2026-05-04 19:09:37,394 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 999: teste
+2026-05-04 19:09:37,422 - __main__ - INFO - \u2705 Resposta gerada: Oi! Eu posso agendar lavagem ou consultar um agend...
+2026-05-04 19:09:37,455 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:09:37,464 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=999: Oi! Eu posso agendar lavagem ou consultar um agend...
+2026-05-04 19:09:37,472 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:09:39,277 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 400 73
+2026-05-04 19:09:39,278 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 400 - {'ok': False, 'error_code': 400, 'description': 'Bad Request: chat not found'}
+2026-05-04 19:09:39,282 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:09:39] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:11:00,888 - __main__ - INFO - \U0001f680 Iniciando app Flask na porta 5000
+2026-05-04 19:11:01,035 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2026-05-04 19:11:01,035 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-05-04 19:11:01,040 - werkzeug - INFO -  * Restarting with stat
+2026-05-04 19:11:05,553 - __main__ - INFO - \U0001f680 Iniciando app Flask na porta 5000
+2026-05-04 19:11:05,660 - werkzeug - WARNING -  * Debugger is active!
+2026-05-04 19:11:05,667 - werkzeug - INFO -  * Debugger PIN: 109-752-643
+2026-05-04 19:14:29,773 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:14:29] "GET /health HTTP/1.1" 200 -
+2026-05-04 19:17:17,469 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:17:17] "GET /health HTTP/1.1" 200 -
+2026-05-04 19:27:27,184 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774700, 'message': {'message_id': 1, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933646, 'text': '/start', 'entities': [{'offset': 0, 'length': 6, 'type': 'bot_command'}]}}
+2026-05-04 19:27:27,185 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:27:27,186 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:27:27,197 - __main__ - INFO - \u2705 Texto extraído: '/start'
+2026-05-04 19:27:27,198 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: /start
+2026-05-04 19:27:27,199 - __main__ - INFO - \u2705 Resposta gerada: Oi! Eu posso agendar lavagem ou consultar um agend...
+2026-05-04 19:27:27,200 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:27:27,217 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Oi! Eu posso agendar lavagem ou consultar um agend...
+2026-05-04 19:27:27,231 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:27:28,716 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 400
+2026-05-04 19:27:28,717 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 2, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933648, 'text': "Oi! Eu posso agendar lavagem ou consultar um agendamento. Digite 'agendar' para marcar um horario ou 'consultar' para buscar pela placa."}}
+2026-05-04 19:27:28,727 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:27:28] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:27:43,877 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774701, 'message': {'message_id': 3, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933663, 'text': 'agendar'}}
+2026-05-04 19:27:43,877 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:27:43,878 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:27:43,878 - __main__ - INFO - \u2705 Texto extraído: 'agendar'
+2026-05-04 19:27:43,878 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: agendar
+2026-05-04 19:27:43,879 - __main__ - INFO - \u2705 Resposta gerada: Vamos agendar. Qual e o seu nome?...
+2026-05-04 19:27:43,880 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:27:43,882 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Vamos agendar. Qual e o seu nome?...
+2026-05-04 19:27:43,890 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:27:45,320 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 297
+2026-05-04 19:27:45,322 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 4, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933665, 'text': 'Vamos agendar. Qual e o seu nome?'}}
+2026-05-04 19:27:45,338 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:27:45] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:27:49,078 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774702, 'message': {'message_id': 5, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933668, 'text': 'Fabio'}}
+2026-05-04 19:27:49,079 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:27:49,079 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:27:49,080 - __main__ - INFO - \u2705 Texto extraído: 'Fabio'
+2026-05-04 19:27:49,080 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: Fabio
+2026-05-04 19:27:49,081 - __main__ - INFO - \u2705 Resposta gerada: Qual e a placa do veiculo?...
+2026-05-04 19:27:49,082 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:27:49,082 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Qual e a placa do veiculo?...
+2026-05-04 19:27:49,087 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:27:50,584 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 290
+2026-05-04 19:27:50,586 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 6, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933670, 'text': 'Qual e a placa do veiculo?'}}
+2026-05-04 19:27:50,591 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:27:50] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:28:00,842 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774703, 'message': {'message_id': 7, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933680, 'text': 'zxc1234'}}
+2026-05-04 19:28:00,843 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:28:00,846 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:28:00,847 - __main__ - INFO - \u2705 Texto extraído: 'zxc1234'
+2026-05-04 19:28:00,848 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: zxc1234
+2026-05-04 19:28:00,849 - __main__ - INFO - \u2705 Resposta gerada: Para qual data deseja agendar?...
+2026-05-04 19:28:00,850 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:28:00,851 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Para qual data deseja agendar?...
+2026-05-04 19:28:00,855 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:28:02,901 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 294
+2026-05-04 19:28:02,902 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 8, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933682, 'text': 'Para qual data deseja agendar?'}}
+2026-05-04 19:28:02,905 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:28:02] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:28:11,031 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774704, 'message': {'message_id': 9, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933690, 'text': '05 maio'}}
+2026-05-04 19:28:11,032 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:28:11,032 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:28:11,033 - __main__ - INFO - \u2705 Texto extraído: '05 maio'
+2026-05-04 19:28:11,033 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: 05 maio
+2026-05-04 19:28:16,224 - __main__ - ERROR - \u274c Erro ao processar mensagem: The read operation timed out
+2026-05-04 19:28:16,547 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\backends\sync.py", line 28, in read
+    return self._sock.recv(max_bytes)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Python314\Lib\ssl.py", line 1285, in recv
+    return self.read(buflen)
+           ~~~~~~~~~^^^^^^^^
+  File "C:\Python314\Lib\ssl.py", line 1140, in read
+    return self._sslobj.read(len)
+           ~~~~~~~~~~~~~~~~~^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 253, in handle_request
+    raise exc
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 237, in handle_request
+    response = connection.handle_request(request)
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\_sync\connection.py", line 90, in handle_request
+    return self._connection.handle_request(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\_sync\http11.py", line 112, in handle_request
+    raise exc
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\_sync\http11.py", line 91, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\_sync\http11.py", line 155, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\_sync\http11.py", line 191, in _receive_event
+    data = self._network_stream.read(
+        self.READ_NUM_BYTES, timeout=timeout
+    )
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\backends\sync.py", line 26, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc)
+httpcore.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Fabio\Documents\BolhaBot\app.py", line 444, in telegram_webhook
+    resposta_texto = processar_chat_web(str(chat_id), text)
+  File "C:\Users\Fabio\Documents\BolhaBot\app.py", line 318, in processar_chat_web
+    return processar_fluxo_agendamento(session_id, texto_original)
+  File "C:\Users\Fabio\Documents\BolhaBot\app.py", line 241, in processar_fluxo_agendamento
+    ocupados = buscar_horarios_ocupados(dados["data"])
+  File "C:\Users\Fabio\Documents\BolhaBot\app.py", line 106, in buscar_horarios_ocupados
+    agendamentos = consultar_agendamento_por_data(data)
+  File "C:\Users\Fabio\Documents\BolhaBot\services\agendamento_service.py", line 15, in consultar_agendamento_por_data
+    response = supabase.table("agendamentos").select("*").eq("data", data).execute()
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\postgrest\_sync\request_builder.py", line 55, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpx\_client.py", line 821, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpx\_client.py", line 908, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpx\_client.py", line 936, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpx\_client.py", line 973, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpx\_client.py", line 1009, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpx\_transports\default.py", line 217, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Fabio\Documents\BolhaBot\venv\Lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+
+2026-05-04 19:28:16,548 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:28:16,549 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Desculpe, tive um erro ao processar sua mensagem....
+2026-05-04 19:28:16,551 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:28:18,011 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 314
+2026-05-04 19:28:18,012 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 10, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933697, 'text': 'Desculpe, tive um erro ao processar sua mensagem.'}}
+2026-05-04 19:28:18,029 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:28:18] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:28:29,111 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774705, 'message': {'message_id': 11, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933708, 'text': '05/05'}}
+2026-05-04 19:28:29,112 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:28:29,112 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:28:29,113 - __main__ - INFO - \u2705 Texto extraído: '05/05'
+2026-05-04 19:28:29,113 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: 05/05
+2026-05-04 19:28:30,083 - httpx._client - DEBUG - HTTP Request: GET https://wlggezbchanejwgeaiac.supabase.co/rest/v1/agendamentos?select=%2A&data=eq.2026-05-05 "HTTP/1.1 200 OK"
+2026-05-04 19:28:30,090 - __main__ - INFO - \u2705 Resposta gerada: Escolha um horario disponivel para 05/05/2026:
+08:...
+2026-05-04 19:28:30,091 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:28:30,091 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Escolha um horario disponivel para 05/05/2026:
+08:...
+2026-05-04 19:28:30,095 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:28:31,506 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 388
+2026-05-04 19:28:31,508 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 12, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933711, 'text': 'Escolha um horario disponivel para 05/05/2026:\n08:00\n09:00\n10:00\n11:00\n12:00\n13:00\n14:00\n15:00\n16:00\n17:00\n18:00'}}
+2026-05-04 19:28:31,512 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:28:31] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:28:37,577 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774706, 'message': {'message_id': 13, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933717, 'text': '18'}}
+2026-05-04 19:28:37,578 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:28:37,578 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:28:37,579 - __main__ - INFO - \u2705 Texto extraído: '18'
+2026-05-04 19:28:37,579 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: 18
+2026-05-04 19:28:38,350 - httpx._client - DEBUG - HTTP Request: GET https://wlggezbchanejwgeaiac.supabase.co/rest/v1/agendamentos?select=%2A&data=eq.2026-05-05 "HTTP/1.1 200 OK"
+2026-05-04 19:28:38,630 - httpx._client - DEBUG - HTTP Request: POST https://wlggezbchanejwgeaiac.supabase.co/rest/v1/agendamentos "HTTP/1.1 201 Created"
+2026-05-04 19:28:38,637 - __main__ - INFO - \u2705 Resposta gerada: Perfeito, Fabio! Seu veiculo de placa ZXC1234 foi ...
+2026-05-04 19:28:38,637 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:28:38,638 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Perfeito, Fabio! Seu veiculo de placa ZXC1234 foi ...
+2026-05-04 19:28:38,640 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:28:40,249 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 349
+2026-05-04 19:28:40,251 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 14, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933720, 'text': 'Perfeito, Fabio! Seu veiculo de placa ZXC1234 foi agendado para 05/05/2026 as 18:00.'}}
+2026-05-04 19:28:40,261 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:28:40] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:28:46,055 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774707, 'message': {'message_id': 15, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933725, 'text': 'oi'}}
+2026-05-04 19:28:46,058 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:28:46,059 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:28:46,060 - __main__ - INFO - \u2705 Texto extraído: 'oi'
+2026-05-04 19:28:46,064 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: oi
+2026-05-04 19:28:46,066 - __main__ - INFO - \u2705 Resposta gerada: Oi! Eu posso agendar lavagem ou consultar um agend...
+2026-05-04 19:28:46,175 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:28:46,202 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Oi! Eu posso agendar lavagem ou consultar um agend...
+2026-05-04 19:28:46,208 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:28:47,689 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 401
+2026-05-04 19:28:47,690 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 16, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933727, 'text': "Oi! Eu posso agendar lavagem ou consultar um agendamento. Digite 'agendar' para marcar um horario ou 'consultar' para buscar pela placa."}}
+2026-05-04 19:28:47,696 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:28:47] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:28:51,671 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774708, 'message': {'message_id': 17, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933731, 'text': 'consultar'}}
+2026-05-04 19:28:51,671 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:28:51,672 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:28:51,672 - __main__ - INFO - \u2705 Texto extraído: 'consultar'
+2026-05-04 19:28:51,672 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: consultar
+2026-05-04 19:28:51,673 - __main__ - INFO - \u2705 Resposta gerada: Informe a placa do veiculo para consultar....
+2026-05-04 19:28:51,673 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:28:51,674 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Informe a placa do veiculo para consultar....
+2026-05-04 19:28:51,677 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:28:53,148 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 307
+2026-05-04 19:28:53,149 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 18, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933733, 'text': 'Informe a placa do veiculo para consultar.'}}
+2026-05-04 19:28:53,154 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:28:53] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:28:58,702 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774709, 'message': {'message_id': 19, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933738, 'text': 'zxc1234'}}
+2026-05-04 19:28:58,703 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:28:58,703 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:28:58,704 - __main__ - INFO - \u2705 Texto extraído: 'zxc1234'
+2026-05-04 19:28:58,704 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: zxc1234
+2026-05-04 19:28:59,079 - httpx._client - DEBUG - HTTP Request: GET https://wlggezbchanejwgeaiac.supabase.co/rest/v1/agendamentos?select=%2A&placa=eq.ZXC1234 "HTTP/1.1 200 OK"
+2026-05-04 19:28:59,081 - __main__ - INFO - \u2705 Resposta gerada: Encontrei seu agendamento. Veiculo ZXC1234 marcado...
+2026-05-04 19:28:59,082 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:28:59,082 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Encontrei seu agendamento. Veiculo ZXC1234 marcado...
+2026-05-04 19:28:59,084 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:29:00,511 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 341
+2026-05-04 19:29:00,511 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 20, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933740, 'text': 'Encontrei seu agendamento. Veiculo ZXC1234 marcado para 05/05/2026 as 18:00.'}}
+2026-05-04 19:29:00,515 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:29:00] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:29:06,271 - __main__ - INFO - \U0001f525 TELEGRAM CHEGOU: {'update_id': 987774710, 'message': {'message_id': 21, 'from': {'id': 6528003205, 'is_bot': False, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'language_code': 'pt-br'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933745, 'text': 'tchau'}}
+2026-05-04 19:29:06,293 - __main__ - INFO - \u2705 Campo 'message' encontrado
+2026-05-04 19:29:06,344 - __main__ - INFO - \u2705 Chat ID extraído: 6528003205
+2026-05-04 19:29:06,408 - __main__ - INFO - \u2705 Texto extraído: 'tchau'
+2026-05-04 19:29:06,481 - __main__ - INFO - \U0001f4ac Processando mensagem do chat 6528003205: tchau
+2026-05-04 19:29:06,577 - __main__ - INFO - \u2705 Resposta gerada: Conversa encerrada. Obrigado por usar o BolhaBot!...
+2026-05-04 19:29:06,679 - __main__ - INFO - \U0001f4e4 Enviando resposta para Telegram...
+2026-05-04 19:29:06,807 - __main__ - INFO - \U0001f4e4 Enviando para Telegram chat_id=6528003205: Conversa encerrada. Obrigado por usar o BolhaBot!...
+2026-05-04 19:29:06,964 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2026-05-04 19:29:08,835 - urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot8773924229:AAG0mr0Tz_BMoAdwZyAccsPZHc5Ndsjkqrg/sendMessage HTTP/1.1" 200 314
+2026-05-04 19:29:08,836 - __main__ - INFO - \U0001f4e5 Resposta Telegram: 200 - {'ok': True, 'result': {'message_id': 22, 'from': {'id': 8773924229, 'is_bot': True, 'first_name': 'BolhaBot', 'username': 'BolhaBot_bot'}, 'chat': {'id': 6528003205, 'first_name': 'Fabio', 'last_name': 'Baptista', 'username': 'fdbaptista', 'type': 'private'}, 'date': 1777933748, 'text': 'Conversa encerrada. Obrigado por usar o BolhaBot!'}}
+2026-05-04 19:29:08,844 - werkzeug - INFO - 127.0.0.1 - - [04/May/2026 19:29:08] "POST /telegram HTTP/1.1" 200 -
+2026-05-04 19:33:02,395 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Fabio\\Documents\\BolhaBot\\setup_webhook.py', reloading
+2026-05-04 19:33:02,528 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Fabio\\Documents\\BolhaBot\\setup_webhook.py', reloading
+2026-05-04 19:33:02,815 - werkzeug - INFO -  * Restarting with stat
+2026-05-04 19:33:02,926 - werkzeug - INFO -  * Restarting with stat
+2026-05-04 19:33:15,518 - __main__ - INFO - \U0001f680 Iniciando app Flask na porta 5000
+2026-05-04 19:33:15,655 - werkzeug - WARNING -  * Debugger is active!
+2026-05-04 19:33:15,670 - werkzeug - INFO -  * Debugger PIN: 109-752-643
+2026-05-04 19:33:16,820 - __main__ - INFO - \U0001f680 Iniciando app Flask na porta 5000
+2026-05-04 19:33:16,959 - werkzeug - WARNING -  * Debugger is active!
+2026-05-04 19:33:16,971 - werkzeug - INFO -  * Debugger PIN: 109-752-643

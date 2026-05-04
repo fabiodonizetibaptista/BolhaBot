@@ -1,4 +1,37 @@
-.env
+# Ambiente virtual
 venv/
+env/
+.venv/
+
+# Cache Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Arquivos de configuração sensíveis
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+telegram_debug.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+.DS_Store
+
+# Arquivos de teste
+test_*.py
+*_test.py
+
+# Arquivos de desenvolvimento
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de migração temporários
+lixo.txt
